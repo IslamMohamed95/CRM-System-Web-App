@@ -1,0 +1,15 @@
+#Footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1%;
+  text-align: center;
+  width: 100%;
+}
+
+#Footer p {
+  font-weight: bold;
+  color: var(--color-dark);
+}
+#Footer p span {
+  color: var(--color-light);
+}

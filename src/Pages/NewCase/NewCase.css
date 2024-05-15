@@ -1,0 +1,263 @@
+#Case {
+  display: flex;
+  justify-content: space-between;
+  width: 79dvw;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2%;
+  box-shadow: 0px 0px 30px rgb(204, 204, 204);
+}
+
+#Case #caseRole {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Case #caseRole .role {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(209, 209, 209);
+  box-shadow: 0px 0px 10px rgb(114, 114, 114);
+  margin: 8px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeRole {
+  background-color: var(--color-dark) !important;
+  color: white;
+  box-shadow: 0px 0px 10px var(--color-dark) !important;
+}
+
+#Case #caseRole .role h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#Case #caseRole .role:hover {
+  transform: scale(0.8);
+}
+
+#Case .caseDetails {
+  width: 69dvw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Case #providerDetails,
+#Case #issueDetails,
+#Case #caseResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Case #caseInputs {
+  display: flex;
+}
+
+#Case #providerDetails,
+#Case #issueDetails,
+#Case #caseResult,
+#Case #note {
+  background-color: rgb(196, 196, 196);
+  padding: 2.5% 3%;
+  margin: 1%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(168, 168, 168);
+}
+
+#Case #note {
+  background-color: var(--color-dark);
+}
+
+#Case #providerDetails,
+#Case #issueDetails {
+  width: 23dvw;
+  height: 28dvh;
+}
+
+#Case #caseResult {
+  height: 32dvh;
+}
+
+#Case #note {
+  width: 40dvw;
+}
+
+#Case #caseResult > div {
+  height: 100%;
+}
+
+#Case #providerDetails label,
+#Case #issueDetails label,
+#Case #caseResult label,
+#Case #note label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#Case #note label {
+  color: white;
+}
+
+#Case #providerDetails input,
+#Case #issueDetails input,
+#Case #caseResult textarea,
+#Case #note textarea,
+#Case #note input {
+  border: none;
+  color: black;
+  padding: 1% 0;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+
+#Case #providerDetails input,
+#Case #issueDetails input,
+#Case #note input {
+  margin: 3% 0;
+  text-align: center;
+}
+
+#Case #caseResult textarea,
+#Case #note textarea {
+  padding: 1.5%;
+  height: 100%;
+  resize: none;
+  margin: 2% 0 0 0;
+  font-size: 13px;
+}
+#Case #note textarea {
+  height: 37dvh !important;
+}
+
+#Case #providerDetails > div,
+#Case #issueDetails > div,
+#Case #caseResult > div,
+#Case #note > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#Case #Btns {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#Case #Btns button {
+  width: 100px;
+  border-radius: 5px;
+  padding: 1% 0;
+  margin: 0 15px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  outline-offset: -2;
+  transition: all 0.1s ease-in-out;
+}
+
+#Case #Btns button:hover {
+  outline-offset: 5px;
+}
+
+#Case #Btns button:first-child {
+  background-color: var(--color-light);
+  outline: 2px solid var(--color-light);
+}
+
+#Case #Btns button:last-child {
+  background-color: var(--color-dark);
+  outline: 2px solid var(--color-dark);
+}
+
+#Case .options {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+#Case .options input:hover,
+#Case .options svg:hover {
+  cursor: pointer;
+}
+
+#Case .options input {
+  width: 100%;
+}
+
+#Case .options svg {
+  right: 20px;
+  top: 16px;
+  width: fit-content;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+#Case .options ul {
+  padding: 1% 2%;
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 85%;
+  width: 100%;
+  background-color: rgb(168, 168, 168);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeList {
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 2 !important;
+}
+
+#Case .options ul button {
+  border: none;
+  width: 100%;
+  background-color: white;
+  margin: 1% 0;
+  font-size: 15px;
+  text-align: center;
+  padding: 1% 0;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#Case .options ul li:hover {
+  background-color: var(--color-dark) !important;
+  color: white !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#Case .greeting,
+#Case .ending,
+#Case #content span {
+  font-weight: bold;
+}

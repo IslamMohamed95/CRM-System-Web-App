@@ -1,0 +1,230 @@
+#login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .Form {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 60dvh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(187, 187, 187);
+}
+
+#login .loginF,
+#login .registerF {
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+  padding: 0 5%;
+}
+
+#login .loginF form,
+#login .registerF form {
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+}
+#login .registerF form {
+  transform: translateX(-100%);
+}
+
+#login .loginF h2,
+#login .registerF h2 {
+  font-size: 50px;
+  margin-bottom: 10%;
+  color: var(--color-dark);
+}
+#login .loginF span,
+#login .registerF span {
+  color: var(--color-light);
+}
+
+#login .loginF label,
+#login .registerF label {
+  width: 100%;
+  align-self: left;
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#login .loginF #passwordReset {
+  text-align: center;
+  margin: 3% 0 2%;
+  color: grey;
+}
+#login .loginF #passwordReset:hover,
+#login .effect #resetFrom .cancelReset {
+  cursor: pointer;
+}
+#login input {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 5%;
+  padding: 2%;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid rgb(214, 214, 214);
+  display: block;
+}
+
+#login .loginF button,
+#login .registerF button {
+  background-color: var(--color-dark);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 3% 0;
+  width: 50%;
+  margin-top: 5%;
+  align-self: center;
+}
+
+#login .effect h1 {
+  font-size: 45px;
+  margin-bottom: 5%;
+}
+#login .effect p {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#login .effect button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 10%;
+  padding: 3% 0%;
+  width: 40%;
+}
+
+#login .effect {
+  color: white;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  border-bottom-left-radius: 25%;
+  border-top-left-radius: 25%;
+  background-color: var(--color-dark);
+  transition: all 0.6s ease-in-out;
+}
+
+#login .effect #resetFrom {
+  padding: 0% 5%;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#login .effect #resetFrom h1 {
+  margin-bottom: 3%;
+}
+
+#login .effect #resetFrom h1 span {
+  color: var(--color-light);
+}
+
+#login .effect #resetFrom p {
+  margin-bottom: 5%;
+  font-size: 20px;
+}
+
+#login .effect #resetFrom .cancelReset {
+  color: rgb(202, 202, 202);
+  font-size: 18px;
+}
+
+#login .effect #resetFrom label {
+  font-size: 20px;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-bottom: 3%;
+}
+
+#login .effect #resetFrom button {
+  margin: 0;
+  font-size: 18px;
+  padding: 1% 0;
+  width: 20%;
+}
+
+#login .signUpGreeting,
+#login .signInGreeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  transition: all 0.6s ease-in-out;
+}
+
+#login .signInGreeting {
+  position: absolute;
+  transform: translateX(-200%);
+}
+
+/*---- Animation effects ----*/
+.animation {
+  border-bottom-left-radius: 0% !important;
+  border-top-left-radius: 0% !important;
+  border-bottom-right-radius: 25% !important;
+  border-top-right-radius: 25% !important;
+  transform: translateX(-100%);
+}
+.hideSignUpGreeting {
+  transform: translateX(200%);
+}
+.showSignInGreeting {
+  transform: translateX(0%) !important;
+}
+.hideLoginForm {
+  transform: translateX(100%);
+}
+.showRegisterForm {
+  transform: translateX(0%) !important;
+}
+.showResetFrom {
+  z-index: 1 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.showFullWidth {
+  border-bottom-left-radius: 0% !important;
+  border-top-left-radius: 0% !important;
+  border-bottom-right-radius: 0% !important;
+  border-top-right-radius: 0% !important;
+  width: 100% !important;
+}

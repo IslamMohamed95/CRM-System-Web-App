@@ -1,0 +1,13 @@
+#Header {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  padding: 1%;
+}
+#Header h2 {
+  color: var(--color-dark);
+}
+#Header h3 {
+  margin: -2px 0 0 120px;
+  color: var(--color-light);
+}

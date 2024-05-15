@@ -1,0 +1,106 @@
+#Overview {
+  height: 78.5dvh;
+  width: 15dvw;
+  background-color: var(--color-dark);
+  padding: 2%;
+  box-shadow: 0px 0px 20px 0px #2f5597;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Overview .personalView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Overview img {
+  outline: 1px solid white;
+  outline-offset: 8px;
+  box-shadow: 0px 0px 5px 4px white;
+  border-radius: 50%;
+
+  width: 50%;
+}
+
+#Overview #name {
+  margin: 25px 0 20px 0;
+}
+
+#Overview #personalActions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: rgb(199, 199, 199);
+}
+
+#Overview #personalActions #exit {
+  transition: all 0.3s ease-in-out;
+}
+#Overview #personalActions #exit:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+#Overview #firstBreak {
+  border-radius: 15px;
+  margin-top: 30px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgb(156, 156, 156);
+}
+
+#Overview ul {
+  list-style: none;
+  width: 90%;
+}
+
+#Overview h4 {
+  width: 100%;
+  font-size: 18px;
+  align-self: left;
+  margin: 20px 0 15px 0;
+  color: var(--list-text-color);
+}
+
+#Overview li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  margin: 2px 0 15px 0;
+  color: var(--list-text-color);
+  transition: transform 0.3s ease-in-out;
+}
+
+#Overview li p {
+  align-self: flex-start;
+}
+
+#Overview li svg {
+  width: 30px;
+}
+
+#Overview li:hover {
+  transform: scale(0.9);
+}
+
+#Overview .normalBreak {
+  border-radius: 15px;
+  width: 80%;
+  height: 1px;
+  border: none;
+  background-color: rgb(156, 156, 156);
+}
+
+#Overview #cases {
+  list-style: none;
+}
