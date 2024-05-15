@@ -165,7 +165,7 @@ function NewCase() {
         v.disabled = true;
       });
     }
-  }, [newCase.classi]);
+  }, [newCase, newCase.classi]);
   return (
     <section id="Case">
       <div id="caseRole">
